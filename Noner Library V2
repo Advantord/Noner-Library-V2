@@ -62,7 +62,7 @@ end
 
 local function TextSetColor(instance)
   instance.MouseEnter:Connect(function()
-    CreateTween(instance, "TextColor3", Color3.fromRGB(30, 140, 200), 0.4, true)
+    CreateTween(instance, "TextColor3", Color3.fromRGB(250, 250, 250), 0.4, true)
   end)
   instance.MouseLeave:Connect(function()
     CreateTween(instance, "TextColor3", Configs_HUB.Cor_Text, 0.4, false)
@@ -708,7 +708,7 @@ function MakeWindow(Configs)
     
     TextButton.MouseButton1Click:Connect(function()
       Callback("Click!!")
-      CreateTween(ImageLabel, "ImageColor3", Color3.fromRGB(30, 140, 200), 0.2, true)
+      CreateTween(ImageLabel, "ImageColor3", Color3.fromRGB(250, 250, 250), 0.2, true)
       CreateTween(ImageLabel, "ImageColor3", Configs_HUB.Cor_Stroke, 0.2, false)
     end)
     
@@ -757,18 +757,18 @@ function MakeWindow(Configs)
     if Default then
       OnOff = true
       CreateTween(Frame2, "Position", UDim2.new(0, 10, 0.5, 0), 0.2, false)
-      CreateTween(Frame2, "BackgroundColor3", Color3.fromRGB(30, 140, 200), 0.2, false)
-      CreateTween(Stroke, "Color", Color3.fromRGB(30, 140, 200), 0.2, false)
-      CreateTween(TextLabel, "TextColor3", Color3.fromRGB(30, 140, 200), 0.2, false)
+      CreateTween(Frame2, "BackgroundColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
+      CreateTween(Stroke, "Color", Color3.fromRGB(250, 250, 250), 0.2, false)
+      CreateTween(TextLabel, "TextColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
     end
     Callback(OnOff)
     TextButton.MouseButton1Click:Connect(function()
       if Frame2.Position.X.Offset < 5 then
         OnOff = true
         CreateTween(Frame2, "Position", UDim2.new(0, 10, 0.5, 0), 0.2, false)
-        CreateTween(Frame2, "BackgroundColor3", Color3.fromRGB(30, 140, 200), 0.2, false)
-        CreateTween(Stroke, "Color", Color3.fromRGB(30, 140, 200), 0.2, false)
-        CreateTween(TextLabel, "TextColor3", Color3.fromRGB(30, 140, 200), 0.2, false)
+        CreateTween(Frame2, "BackgroundColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
+        CreateTween(Stroke, "Color", Color3.fromRGB(250, 250, 250), 0.2, false)
+        CreateTween(TextLabel, "TextColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
         Callback(true)
       else
         OnOff = false
@@ -863,7 +863,7 @@ function MakeWindow(Configs)
       CreateTween(Frame2, "Position", UDim2.new(0, 10, 0.5, 0), 0.2, false)
       CreateTween(Frame2, "BackgroundColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
       CreateTween(Stroke, "Color", Color3.fromRGB(250, 250, 250), 0.2, false)
-      CreateTween(TextLabel, "TextColor3", Color3.fromRGB(30, 140, 200), 0.2, false)
+      CreateTween(TextLabel, "TextColor3", Color3.fromRGB(250, 250, 250), 0.2, false)
     else
       Callback(false)
       CreateTween(Frame2, "Position", UDim2.new(0, 2, 0.5, 0), 0.2, false)
