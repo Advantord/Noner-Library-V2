@@ -1315,7 +1315,7 @@ function MakeWindow(Configs)
         Text = OptionName,
         Font = Configs_HUB.Text_Font,
         TextSize = 12,
-        TextColor3 = Color3.fromRGB(20, 20, 20),
+        TextColor3 = Color3.fromRGB(180, 180, 180),
         BackgroundTransparency = 1
       })Corner(TextButton)
       
